@@ -2,6 +2,8 @@
 """
 Created on Wed Dec 14 00:36:13 2016
 
+Wrapper for Quantis.h generated with ctypesgen.py
+
 @author: Gabriel Guerrer
 """
 
@@ -523,14 +525,3 @@ class QUANTIS():
     
     def plot(self):
         pass
-
-    
-
-    
-    
-
-    
-
-
-    
-   
