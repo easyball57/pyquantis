@@ -25,16 +25,14 @@ def randfloat(n):
 def randdouble(n):
     return jsonify(rd.get_double(n))
     
-@app.route("/randbits/<int:n>")
-def randbits(n):
-    rd.start()
-    data = rd.get_bits(n)
-    rd.close()
-    return jsonify(data)
-
 @app.route("/",methods=["GET","POST"])
 def form():
-    return "Quantum Random Number Generator API"
+    return """<H1>Quantum Random Number Generator API Quantis ID USB</H1>
+
+    <H2><b>/randfloat/</b><i>numbers</i></H2>
+
+    <H2><b>/randdouble/</b><i>numbers</i></H2>
+    """
 
 
 
